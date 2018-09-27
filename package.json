@@ -1,0 +1,29 @@
+{
+  "name": "targets-solver",
+  "version": "1.0.0",
+  "description": "solves the nyt sunday magazine targets puzzle",
+  "license": "MIT",
+  "author": "Patrick Mueller <pmuellr@apache.org> (https://github.com/pmuellr)",
+  "homepage": "https://github.com/pmuellr/targets-solver",
+  "main": "lib/targets-solver.js",
+  "bin": {
+    "targets-solver": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmuellr/targets-solver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmuellr/targets-solver/issues"
+  },
+  "standard": {
+    "ignore": [
+      "/node_modules/",
+      "/tmp/"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
