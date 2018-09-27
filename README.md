@@ -8,21 +8,28 @@ N, NE, E, SE, S, SW, W, or NW in empty cells, each pointing to a target,
 such that the numbers associated with rows and columns end up counting the
 number of arrows in those rows and columns.
 
-Eg, on the left is the puzzle, on the right is the solution (note, it looks
-better on a terminal!)
+Eg, on the left is the puzzle, on the right is the solution.
 
 ```
-+---+---+---+---+                  +---+---+---+---+  
-|   |   | 🎯 |   | 0                |   |   | 🎯 |   | 0
-+---+---+---+---+                  +---+---+---+---+  
-|   | 🎯 |   |   | 1                |   | 🎯 |   | ↖️ | 1
-+---+---+---+---+                  +---+---+---+---+  
-| 🎯 | 🎯 |   |   | 0                | 🎯 | 🎯 |   |   | 0
-+---+---+---+---+                  +---+---+---+---+  
-|   |   |   |   | 3                | ⬆️ |   | ↖️ | ️↖️ | 3
-+---+---+---+---+                  +---+---+---+---+  
-  1   0   1   2                      1   0   1   2     
+┼───┼───┼───┼───┼            ┼───┼───┼───┼───┼
+│   │   │ O │   │ 0          │   │   │ O │   │ 0
+┼───┼───┼───┼───┼            ┼───┼───┼───┼───┼
+│   │ O │   │   │ 1          │   │ O │   │ \ │ 1
+┼───┼───┼───┼───┼            ┼───┼───┼───┼───┼
+│ O │ O │   │   │ 0          │ O │ O │   │   │ 0
+┼───┼───┼───┼───┼            ┼───┼───┼───┼───┼
+│   │   │   │   │ 3          │ | │   │ \ │ \ │ 3
+┼───┼───┼───┼───┼            ┼───┼───┼───┼───┼
+  1   0   1   2                1   0   1   2  
+
 ```
+
+The "pure ascii" version doesn't show the arrow heads, you can figure them by
+context though ... usually.
+
+The emoji version looks a little nicer:
+
+![solved puzzle](images/solved-puzzle.png)
 
 This project implements a targets solver.
 
